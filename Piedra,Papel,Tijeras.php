@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Online PHP Script Execution</title>
+<title></title>
 </head>
 <body>
 <?php
