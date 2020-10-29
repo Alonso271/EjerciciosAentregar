@@ -21,7 +21,7 @@ if ((empty($_FILES['archivo1']['name'])) && (empty($_FILES['archivo2']['name']))
     $mensaje .= 'ERROR: No se ha seleccionado ningun archivo';
 } else 
     { 
-        if ($_FILES['archivo1']['size'] > 200000 OR $_FILES['archivo2']['size'] > 200000) {
+        if ($_FILES['archivo1']['size'] > 200000 OR $_FILES['archivo2']['size'] > 200000 OR $_FILES['archivo1']['size'] + $_FILES['archivo2']['size']>300000) {
            $mensaje = 'ERROR: archivo demasiado grande';
         }else{
         if (($_FILES['archivo1']['type'] != 'image/jpg' && $_FILES['archivo1']['type'] != 'image/png')) {
